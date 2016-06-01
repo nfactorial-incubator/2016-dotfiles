@@ -5,5 +5,12 @@ This is the standard dotfiles configuration for nFactorial Incubator's students.
 ## Installation
 
 ```bash
-$ git clone --recursive https://github.com/N17R/dotfiles.git ~/dotfiles && set -- -f; bash ~/dotfiles/sync.sh
+# Install rcm
+brew install thoughtbot/formulae/rcm
+
+# Clone dotfiles from Github
+git clone --recursive https://github.com/yenbekbay/dotfiles.git ~/.dotfiles
+
+# Synchronize symlinks
+rcup -v -d ~/.dotfiles/symlinks
 ```
